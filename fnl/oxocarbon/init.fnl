@@ -266,6 +266,35 @@
 (custom-set-face! :Todo [] {:fg oxocarbon.base13 :bg oxocarbon.none})
 (custom-set-face! :Type [] {:fg oxocarbon.base09 :bg oxocarbon.none})
 (custom-set-face! :Typedef [] {:fg oxocarbon.base09 :bg oxocarbon.none})
+
+;; markdown
+
+(custom-set-face! :markdownBlockquote []
+                  {:fg oxocarbon.base08 :bg oxocarbon.none})
+(custom-set-face! :markdownBold [] {:link "Bold"})
+(custom-set-face! :markdownItalic [] {:link "Italic"})
+(custom-set-face! :markdownBoldItalic [:bold :italic]
+                  {:fg oxocarbon.none :bg oxocarbon.none})
+(custom-set-face! :markdownRule [] {:link "Comment"})
+(custom-set-face! :markdownH1 [] {:fg oxocarbon.base10 :bg oxocarbon.none})
+(custom-set-face! :markdownH2 [] {:link "markdownH1"})
+(custom-set-face! :markdownH3 [] {:link "markdownH1"})
+(custom-set-face! :markdownH4 [] {:link "markdownH1"})
+(custom-set-face! :markdownH5 [] {:link "markdownH1"})
+(custom-set-face! :markdownH6 [] {:link "markdownH1"})
+(custom-set-face! :markdownHeadingDelimiter [] {:link "markdownH1"})
+(custom-set-face! :markdownHeadingRule [] {:link "markdownH1"})
+(custom-set-face! :markdownUrl [:underline]
+                  {:fg oxocarbon.base14 :bg oxocarbon.none})
+(custom-set-face! :markdownCode [] {:link "String"})
+(custom-set-face! :markdownCodeBlock [] {:link "markdownCode"})
+(custom-set-face! :markdownCodeDelimiter [] {:link "markdownCode"})
+(custom-set-face! :markdownUrl [] {:link "String"})
+(custom-set-face! :markdownListMarker []
+                  {:fg oxocarbon.base08 :bg oxocarbon.none})
+(custom-set-face! :markdownOrderedListMarker []
+                  {:fg oxocarbon.base08 :bg oxocarbon.none})
+
 ;; treesitter
 ;;; misc
 
@@ -359,7 +388,7 @@
 
 (custom-set-face! "@type" [] {:fg oxocarbon.base09 :bg oxocarbon.none})
 
-(custom-set-face! "@type.builtin" [] {:fg oxocarbon.base04 :bg oxocarbon.none})
+(custom-set-face! "@type.builtin" [] {:fg oxocarbon.base09 :bg oxocarbon.none})
 
 ;; @type.defintion
 ;; @type.qualifier
@@ -387,7 +416,7 @@
 (custom-set-face! "@constant.macro" []
                   {:fg oxocarbon.base07 :bg oxocarbon.none})
 
-(custom-set-face! "@namespace" [] {:fg oxocarbon.base04 :bg oxocarbon.none})
+(custom-set-face! "@namespace" [] {:fg oxocarbon.base07 :bg oxocarbon.none})
 
 (custom-set-face! "@symbol" [:bold] {:fg oxocarbon.base15 :bg oxocarbon.none})
 
@@ -425,10 +454,9 @@
 ;; @text.diff.delete
 ;;; tags
 
-(custom-set-face! "@tag" [] {:fg oxocarbon.base04 :bg oxocarbon.none})
+(custom-set-face! "@tag" [] {:fg oxocarbon.base09 :bg oxocarbon.none})
 
-;; @tag.attribute
-
+(custom-set-face! "@tag.attribute" [] {:fg oxocarbon.base15 :bg oxocarbon.none})
 (custom-set-face! "@tag.delimiter" [] {:fg oxocarbon.base15 :bg oxocarbon.none})
 
 ;;; Conceal
